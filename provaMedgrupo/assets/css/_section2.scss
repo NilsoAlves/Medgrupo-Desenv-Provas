@@ -1,0 +1,15 @@
+.section-2-main-bg {
+    position: absolute;
+    top: 33rem;
+    right: 15.8rem;
+    bottom: 2.75rem;
+    left: 15.8rem;
+    display: flex;
+    width: 58.5rem;
+    height: 16.5rem;
+    padding: 2rem 2.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background: $Dark-Neutral-Neutral-1;
+}
