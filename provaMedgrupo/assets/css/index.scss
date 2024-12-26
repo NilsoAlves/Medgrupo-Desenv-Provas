@@ -1,0 +1,33 @@
+@import './variaveis';
+@import './desktopHeader';
+@import './aside';
+@import './section1';
+@import './section2';
+@import './section3';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.home {
+    position: fixed;
+    background: $Dark-Neutral-Neutral-1;
+    width: 90rem;
+    height: 56.25rem;
+}
+
+

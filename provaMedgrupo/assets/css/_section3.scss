@@ -1,0 +1,233 @@
+.section-3-main-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 25rem;
+    height: 56.25rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-shrink: 0;
+    overflow: auto;
+    background: $Dark-Neutral-Neutral-1;
+
+
+    h2 {
+        color: $Dark-Neutral-Neutral-10;
+        font-family: "FS Emeric";
+        width: 100%;
+        height: auto;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5rem;
+        align-self: stretch;
+    }
+
+
+    .menu-tarefas-semana {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        align-self: stretch;
+       
+        ul li article  section {
+                    display: flex;
+                    width: 22rem;
+                    height: auto;
+                    margin: 0 0 0.5rem 0;
+                    padding: 0.875rem 1rem;
+                    align-items: center;
+                    gap: 1rem;
+                    align-self: stretch;
+                    border-radius: 0.5rem;
+                    background: $Dark-Neutral-Alternative-Neutral15;
+                    
+                    .custom-checkbox-area {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.625rem;
+                        align-self: stretch;
+                    }
+                    
+                    .custom-checkbox {
+                        input {
+                            display: none;
+                    
+                            &:checked + label::before {
+                                background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='icon-check'%3E%3Cpath id='Vector' d='M17 9L10.125 15L7 12.2727' stroke='%23293132' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E ");
+                                background-color: $Dark-Brand-Brand-4;
+                                border: solid 0.13rem $Dark-Brand-Brand-4;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                            }
+                    
+                        }
+                    
+                        label::before {
+                            content: '';
+                            display: flex;
+                            width: 1.25rem;
+                            height: 1.25rem;
+                            border: 0.13rem;
+                            border: solid 0.13rem $Dark-Neutral-Neutral-3;
+                            border-radius: 0.25rem;
+                            cursor: pointer;
+                        }
+                    }
+                    
+                    .tarefas-da-semana-lista-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 0.25rem;
+                        flex: 1 0 0;
+
+                        h3 {
+                            color: $Dark-Neutral-Neutral-10;
+                            font-family: "FS Emeric";
+                            font-size: 1rem;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 1.5rem;
+                        }
+
+                        .tarefas-da-semana-lista-container-2{
+                            display: flex;
+                            align-items: flex-start;
+                            gap: 0.5rem;
+
+                            div {
+                                display: flex;
+                                align-items: flex-start;
+                                gap: 0.5rem;
+
+                                span {
+                                    color: $Dark-Neutral-Neutral-8;
+                                    font-family: "FS Emeric";
+                                    font-size: 0.75rem;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 1rem;
+                                }
+                            }
+                            span {
+                                color: var(--Dark-Neutral-Neutral-8, #C1CBCD);
+                                font-family: "FS Emeric";
+                                font-size: 0.75rem;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 1rem;
+                            }
+                        }
+                    }
+
+
+                    }
+                }
+            
+
+    .section-3-linha-vertical {
+        background: $Dark-Neutral-Alternative-Neutral15;
+        top: 0;
+        position: fixed;
+        right: 24.9rem;
+        display: flex;
+        width: 0.0625rem;
+        height: 100%;
+        align-items: flex-start;
+
+    }    
+    }
+
+
+.tarefas-da-semana {
+    border: none;
+    background: none;
+    position: fixed;
+    top: 51.3rem;
+    right:1.5rem;
+    display: flex;
+    height: 2rem;
+    padding: 0.5rem 0rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    border-radius: 2.5rem;
+
+    h3 {
+        color: $Dark-Neutral-Neutral-10;
+        text-align: center;
+        font-family: "FS Emeric";
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1rem;
+    }
+
+    .tarefas-da-semana-icone-setas {
+        margin: 0.5rem 0 0.5rem 0.5rem;
+    }
+
+
+}
+
+
+
+
+.botao-expandir-menu-tarefas-semana {
+    display: flex;
+    width: 25rem;
+    height: 5rem;
+    padding: 2rem 1.5rem 1.5rem 22rem;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 0rem;
+    right: 0;
+    border: none;
+    background: linear-gradient(0deg, #121616 0%, rgba(18, 22, 22, 0.00) 100%);
+
+
+    .custom-checkbox-2 {
+        input {
+            display: none;
+    
+        }
+
+        & :checked label::before {
+            background: none;
+
+            .botao-expandir-menu-tarefas-semana:checked ~ .menu-tarefas-semana ul li article section {
+                display: flex;
+            }
+
+        }
+    
+        label::before {
+            content: '';
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M13 17L18 12L13 7M6 17L11 12L6 7' stroke='%23F9FAFA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            display: flex;
+            width: 1.5rem;
+            height: 1.5rem;
+            flex-shrink: 0;
+            border: none;
+            cursor: pointer;
+            transition: ease;
+            margin: 2rem 1.5rem 1.5rem 22rem;
+            right: 0;
+
+            .menu-tarefas-semana ul li article section {
+                display: none;
+                transition: all 0.3s ease-in-out;
+            }
+
+        }
+    }
+    
+}
+

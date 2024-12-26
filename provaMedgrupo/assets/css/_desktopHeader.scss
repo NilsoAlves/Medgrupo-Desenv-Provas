@@ -1,0 +1,55 @@
+.desktop-header-rectangle {
+    width: 80rem;
+    height: 2rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    background: $Dark-Neutral-Neutral-1;
+
+    .desktop-header {
+        width: 6.5rem;
+        height: 2rem;
+        flex-shrink: 0;
+        border-radius: 0.5rem 0.5rem 0rem 0rem;
+        background: $Dark-Neutral-Neutral-1;
+
+        .base-action-group {
+            background: $Dark-Neutral-Neutral-1;
+            display: flex;
+            position: relative;
+            top: 0.63rem;
+            right: 2.75rem;
+            bottom: 0.63rem;
+            left: 0.5rem;
+            width: 3.25rem;
+            height: 0.75rem;
+            flex-shrink: 0;
+
+            .base-action-content-1 {
+                position: absolute;
+                background: #FF5E57;
+                right: 2.5rem;
+                @include base-action-dimension();
+                @include base-action-content-dimension();
+            }
+
+            .base-action-content-2 {
+                position: absolute;
+                right: 1.25rem;
+                left: 1.25rem;
+                background: $Dark-Feedback-Attention;
+                @include base-action-dimension();
+                @include base-action-content-dimension();
+            }
+
+            .base-action-content-3 {
+                position: absolute;
+                left: 2.5rem;
+                background: #38C149;
+                @include base-action-dimension();
+                @include base-action-content-dimension();
+            }
+        }
+
+    }
+
+}
